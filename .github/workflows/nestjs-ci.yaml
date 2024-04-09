@@ -68,7 +68,7 @@ jobs:
             # GitHub에서 최신 코드를 가져옴
             git pull
 
-            # .env 파일 생성
+            ## .env 파일 생성
             echo "DB_NAME=${{ secrets.DB_NAME }}" > .env
             echo "DB_SYNC=${{ secrets.DB_SYNC }}" >> .env
             echo "JWT_SECRET_KEY=${{ secrets.JWT_SECRET_KEY }}" >> .env
